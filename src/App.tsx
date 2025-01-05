@@ -2,10 +2,12 @@ import React from 'react';
 import { Facebook, Instagram, Wand2 } from 'lucide-react';
 import { SocialLink } from './components/SocialLink';
 import { BackgroundEffects } from './components/BackgroundEffects';
+import { Background } from './components/Background';
 
 function App() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-red-950 via-red-950 to-black text-red-100 relative overflow-hidden">
+      <Background />
       <BackgroundEffects />
       
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 py-16">
