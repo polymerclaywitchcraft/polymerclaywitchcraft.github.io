@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Wand2 } from 'lucide-react';
+import { Facebook, Instagram, Wand2, Mail } from 'lucide-react';
 import { SocialLink } from './components/SocialLink';
 import { BackgroundEffects } from './components/BackgroundEffects';
 import { Background } from './components/Background';
@@ -69,6 +69,11 @@ function App() {
               </svg>
             )}
             label="Support on Patreon"
+          />
+          <SocialLink
+            href="/coven/"
+            icon={Mail}
+            label="Subscribe to the Coven"
           />
         </div>
       </div>
