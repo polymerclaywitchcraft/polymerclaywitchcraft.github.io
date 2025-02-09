@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Wand2, Mail } from 'lucide-react';
+import { Facebook, Instagram, Wand2, Mail, ShoppingBasket } from 'lucide-react';
 import { SocialLink } from './components/SocialLink';
 import { BackgroundEffects } from './components/BackgroundEffects';
 import { Background } from './components/Background';
@@ -23,6 +23,11 @@ function App() {
         </div>
 
         <div className="flex flex-col gap-4 w-full max-w-md">
+          <SocialLink
+            href="https://store.polymerclaywitchcraft.com/"
+            icon={ShoppingBasket}
+            label="Find Your Future Magic in the Store"
+          />
           <SocialLink
             href="https://www.facebook.com/profile.php?id=61568477402660"
             icon={Facebook}
