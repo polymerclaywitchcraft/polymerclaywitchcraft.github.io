@@ -3,6 +3,16 @@ import { Facebook, Instagram, Wand2, Mail, ShoppingBasket } from 'lucide-react';
 import { SocialLink } from './components/SocialLink';
 import { BackgroundEffects } from './components/BackgroundEffects';
 import { Background } from './components/Background';
+import ReactGA from 'react-ga4';
+
+const GA_TRACKING_ID = import.meta.env.VITE_GA_TRACKING_ID || '';
+ReactGA.initialize(GA_TRACKING_ID, {
+  gtagOptions: {
+    'js': new Date(),
+    'config': GA_TRACKING_ID,
+  }
+});
+ReactGA.send('pageview');
 
 function App() {
   return (
